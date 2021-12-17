@@ -1,0 +1,133 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap');
+
+$font-small: 400;
+$font-medium: 500;
+$font-semi-bold: 600;
+$font-big: 700;
+
+/* /FONTS */
+
+/* COLOR */
+// Font
+$pure-white: #FFFFFF;
+$light-title: #ECF1F0;
+$light-subtitle: #B6B6B6;
+$black-title: #2B2B2B;
+// High Fidelity Color
+$primary-color: #0FAE96;
+$secondary-color: #511281;
+$main-bg: #11011E;
+$card-bg: #fff;
+/* /COLOR */
+
+/* COMMON */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+$bg-color: #11011E;
+
+.content-container {
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+.button {
+  padding: 13px 30px;
+  background-color: $primary-color;
+  border: none;
+  border-radius: 10px;
+  font-weight: $font-semi-bold;
+  font-size: 16px;
+  color: $pure-white;
+  cursor: pointer;
+}
+/* /COMMON */
+
+/* HEADER */
+.header {
+  background-color: $bg-color;
+  &__container {
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    font-weight: $font-big;
+    font-size: 24px;
+    color: $pure-white;
+    & > span {
+      color: $primary-color;
+    }
+  }
+  &__login {
+    display: flex;
+    align-items: center;
+  }
+  &__lang {
+    margin-left: 12px;
+    color: $light-subtitle;
+    border: none;
+    background-color: $bg-color;
+  }
+  &__button {
+    margin-left: 27px;
+  }
+}
+.navbar {
+  display: flex;
+  list-style: none;
+  &__link {
+    color: $light-title;
+    font-weight: $font-medium;
+    font-size: 16px;
+    text-decoration: none;
+    transition: .2s;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+  &__item + &__item {
+    margin-left: 40px;
+  }
+}
+
+/* /HEADER */
+
+/* TITLE */
+.title {
+  display: flex;
+  padding-top: 120px;
+  padding-bottom: 135px;
+  justify-content: center;
+  align-items: center;
+  background-color: $bg-color;
+  background-image: url("img/header-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  &__container {
+  text-align: center;
+  }
+  &__text {
+    font-size: 36px;
+    font-weight: $font-big;
+    color: $light-title;
+    margin-bottom: 30px;
+  }
+  &__paragraph {
+    font-family: 'Roboto', sans-serif;
+    font-weight: $font-small;
+    font-size: 18px;
+    color: $light-subtitle;
+    margin-bottom: 50px;
+    line-height: 160%;
+  }
+}
+/* /TITLE */
