@@ -30,10 +30,18 @@ body {
   cursor: pointer;
 }
 
+.section {
+  background-color: #11011E;
+  background-image: url("img/header-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
 /* /COMMON */
 /* HEADER */
 .header {
-  background-color: #11011E;
+  margin-bottom: 120px;
 }
 .header__container {
   display: flex;
@@ -85,14 +93,9 @@ body {
 /* TITLE */
 .title {
   display: flex;
-  padding-top: 120px;
-  padding-bottom: 135px;
+  margin-bottom: 135px;
   justify-content: center;
   align-items: center;
-  background-color: #11011E;
-  background-image: url("img/header-bg.png");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 .title__container {
   text-align: center;
@@ -113,5 +116,75 @@ body {
 }
 
 /* /TITLE */
+/* MARKET-TREND */
+.market-trend {
+  color: #ECF1F0;
+}
+.market-trend__title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+.market-trend__items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  max-width: 300px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 18px;
+  padding: 20px;
+}
+.item__description {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(236, 241, 240, 0.05);
+  padding-bottom: 15px;
+}
+.item__shortname {
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 15px;
+}
+.item__name {
+  font-family: "Raleway", sans-serif;
+  margin-left: 15px;
+  color: #1D1429;
+  padding: 5px;
+  background-color: #C6C6C6;
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+.item__link {
+  width: 50px;
+  height: 50px;
+  background-image: url("/img/see-more.png");
+  margin-left: 45px;
+}
+.item__price {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.item__price-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.item__price-wrapper > span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+.item__current-price {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.item__percent {
+  font-size: 18px;
+  color: #B6B6B6;
+}
+/* /MARKET-TREND */
 
 /*# sourceMappingURL=main.css.map */
