@@ -39,7 +39,7 @@ $bg-color: #11011E;
 }
 
 .button {
-  padding: 13px 30px;
+  padding: 16px 30px;
   background-color: $primary-color;
   border: none;
   border-radius: 10px;
@@ -51,14 +51,22 @@ $bg-color: #11011E;
 
 .section {
   background-color: $bg-color;
-  background-image: url("img/header-bg.png");
-  background-size: cover;
-  background-repeat: no-repeat;
   min-height: 100vh;
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
 }
 /* /COMMON */
 
 /* HEADER */
+.header__section {
+  background-image: url("img/header-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .header {
   margin-bottom: 120px;
   &__container {
@@ -143,10 +151,6 @@ $bg-color: #11011E;
     font-weight: 600;
     margin-bottom: 25px;
   }
-  &__items {
-    display: flex;
-    justify-content: space-between;
-  }
 }
 
 .item {
@@ -208,3 +212,86 @@ $bg-color: #11011E;
   }
 }
 /* /MARKET-TREND */
+
+/* FEATURE */
+.feature {
+  &__section {
+    padding: 50px 0 50px 0;
+    background-image: url("img/bg-features.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -30vh;
+
+  }
+  &__container {
+    text-align: center;
+  }
+  &__paragraph {
+    margin-bottom: 75px;
+  }
+  &__items {
+    text-align: left;
+    margin-bottom: 125px;
+  }
+  &__item {
+    padding: 30px;
+  }
+  &__card-image {
+    margin-bottom: 25px;
+  }
+  &__card-title {
+    font-weight: 600;
+    font-size: 20px;
+    color: $light-title;
+    margin-bottom: 12px;
+  }
+  &__card-text {
+    font-size: 16px;
+    color: $light-subtitle;
+    font-family: 'Roboto', sans-serif;
+    line-height: 24px;
+    margin-bottom: 40px;
+    font-weight: 400;
+  }
+  &__card-link {
+    text-decoration: none;
+    color: $primary-color;
+    font-weight: 500;
+    font-size: 16px;
+    &:after {
+      content: '➜';
+      width: 10px;
+      height: 10px;
+      color: $primary-color;
+      margin-left: 10px;
+    }
+  }
+}
+
+.crypto {
+  display: flex;
+  padding: 20px 60px;
+  text-align: left;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  &__text {
+    max-width: 450px;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 24px;
+    color: $light-title;
+    margin-bottom: 10px;
+  }
+  &__subtitle {
+    margin-bottom: 0;
+    line-height: 28px;
+  }
+  &__button {
+
+  }
+}
+
+/* /FEATURE */

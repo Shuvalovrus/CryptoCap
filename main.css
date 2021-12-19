@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap");
 /* /FONTS */
@@ -20,7 +21,7 @@ body {
 }
 
 .button {
-  padding: 13px 30px;
+  padding: 16px 30px;
   background-color: #0FAE96;
   border: none;
   border-radius: 10px;
@@ -32,14 +33,22 @@ body {
 
 .section {
   background-color: #11011E;
-  background-image: url("img/header-bg.png");
-  background-size: cover;
-  background-repeat: no-repeat;
   min-height: 100vh;
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* /COMMON */
 /* HEADER */
+.header__section {
+  background-image: url("img/header-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .header {
   margin-bottom: 120px;
 }
@@ -125,10 +134,6 @@ body {
   font-weight: 600;
   margin-bottom: 25px;
 }
-.market-trend__items {
-  display: flex;
-  justify-content: space-between;
-}
 
 .item {
   max-width: 300px;
@@ -186,5 +191,80 @@ body {
   color: #B6B6B6;
 }
 /* /MARKET-TREND */
+/* FEATURE */
+.feature__section {
+  padding: 50px 0 50px 0;
+  background-image: url("img/bg-features.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -30vh;
+}
+.feature__container {
+  text-align: center;
+}
+.feature__paragraph {
+  margin-bottom: 75px;
+}
+.feature__items {
+  text-align: left;
+  margin-bottom: 125px;
+}
+.feature__item {
+  padding: 30px;
+}
+.feature__card-image {
+  margin-bottom: 25px;
+}
+.feature__card-title {
+  font-weight: 600;
+  font-size: 20px;
+  color: #ECF1F0;
+  margin-bottom: 12px;
+}
+.feature__card-text {
+  font-size: 16px;
+  color: #B6B6B6;
+  font-family: "Roboto", sans-serif;
+  line-height: 24px;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+.feature__card-link {
+  text-decoration: none;
+  color: #0FAE96;
+  font-weight: 500;
+  font-size: 16px;
+}
+.feature__card-link:after {
+  content: "➜";
+  width: 10px;
+  height: 10px;
+  color: #0FAE96;
+  margin-left: 10px;
+}
+
+.crypto {
+  display: flex;
+  padding: 20px 60px;
+  text-align: left;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.crypto__text {
+  max-width: 450px;
+}
+.crypto__title {
+  font-weight: 600;
+  font-size: 24px;
+  color: #ECF1F0;
+  margin-bottom: 10px;
+}
+.crypto__subtitle {
+  margin-bottom: 0;
+  line-height: 28px;
+}
+/* /FEATURE */
 
 /*# sourceMappingURL=main.css.map */
