@@ -317,6 +317,7 @@ $bg-color: #11011E;
     &__controls {
       display: flex;
       justify-content: space-between;
+      margin-bottom: 30px;
     }
     &__buttons {}
     &__button {
@@ -325,6 +326,7 @@ $bg-color: #11011E;
       border-radius: 6px;
       background-color: #1D0E29;
       color: $light-subtitle;
+      cursor: pointer;
     }
     &__button_active {
       font-family: Roboto, sans-serif;
@@ -334,6 +336,13 @@ $bg-color: #11011E;
     }
     &__button + &__button {
       margin-left: 12px;
+    }
+    &__link {
+      font-size: 16px;
+      text-decoration: underline;
+      font-weight: 500;
+      color: $primary-color;
+      cursor: pointer;
     }
   }
   .search {
@@ -358,5 +367,75 @@ $bg-color: #11011E;
         outline: none;
       }
     }
+  }
+  .table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    color: $light-subtitle;
+    text-align: left;
+    background-color: #160C24;
+    border: 1px solid #FFFFFF0D;
+    border-radius: 4px;
+    margin-bottom: 40px;
+    &__button {
+      padding: 5px 25px;
+      font-family: Raleway, sans-serif;
+      font-weight: 600;
+    }
+    &__coin {
+      font-size: 16px;
+      font-weight: 400;
+      margin-left: 22px;
+      padding-right: 22px;
+      border-right: 1px solid #403A3A;
+    }
+    &__short-coin {
+      margin-left: 12px;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    &__price_red {
+      color: #AE0000;
+    }
+  }
+
+  thead th:nth-child(1) {
+    padding: 20px;
+    width: 8%;
+  }
+  thead th:nth-child(2) {
+    width: 36%;
+  }
+  thead th:nth-child(3) {
+    width: 15%;
+  }
+  thead th:nth-child(4) {
+    width: 13%;
+  }
+  thead th:nth-child(5) {
+    width: 17%;
+  }
+  thead th:nth-child(6) {
+    width: 11%;
+  }
+
+  tbody tr,
+  thead tr {
+    border-bottom: 1px solid #FFFFFF0D;
+  }
+
+  tbody td:nth-child(1) {
+    padding: 20px;
+    vertical-align: center;
+  }
+  tbody td img {
+    vertical-align: middle;
+  }
+  tbody td {
+    padding: 10px 0;
+    height: 62px;
   }
 /* /MARKET */

@@ -287,6 +287,7 @@ body {
 .categories__controls {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 .categories__button {
   padding: 10px 12px;
@@ -294,6 +295,7 @@ body {
   border-radius: 6px;
   background-color: #1D0E29;
   color: #B6B6B6;
+  cursor: pointer;
 }
 .categories__button_active {
   font-family: Roboto, sans-serif;
@@ -303,6 +305,13 @@ body {
 }
 .categories__button + .categories__button {
   margin-left: 12px;
+}
+.categories__link {
+  font-size: 16px;
+  text-decoration: underline;
+  font-weight: 500;
+  color: #0FAE96;
+  cursor: pointer;
 }
 
 .search {
@@ -327,6 +336,84 @@ body {
 }
 .search__input:focus {
   outline: none;
+}
+
+.table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  color: #B6B6B6;
+  text-align: left;
+  background-color: #160C24;
+  border: 1px solid #FFFFFF0D;
+  border-radius: 4px;
+  margin-bottom: 40px;
+}
+.table__button {
+  padding: 5px 25px;
+  font-family: Raleway, sans-serif;
+  font-weight: 600;
+}
+.table__coin {
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 22px;
+  padding-right: 22px;
+  border-right: 1px solid #403A3A;
+}
+.table__short-coin {
+  margin-left: 12px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.table__price_red {
+  color: #AE0000;
+}
+
+thead th:nth-child(1) {
+  padding: 20px;
+  width: 8%;
+}
+
+thead th:nth-child(2) {
+  width: 36%;
+}
+
+thead th:nth-child(3) {
+  width: 15%;
+}
+
+thead th:nth-child(4) {
+  width: 13%;
+}
+
+thead th:nth-child(5) {
+  width: 17%;
+}
+
+thead th:nth-child(6) {
+  width: 11%;
+}
+
+tbody tr,
+thead tr {
+  border-bottom: 1px solid #FFFFFF0D;
+}
+
+tbody td:nth-child(1) {
+  padding: 20px;
+  vertical-align: center;
+}
+
+tbody td img {
+  vertical-align: middle;
+}
+
+tbody td {
+  padding: 10px 0;
+  height: 62px;
 }
 
 /* /MARKET */
