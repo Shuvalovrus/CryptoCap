@@ -68,7 +68,7 @@
                             <span class="item__current-price">$4,267.90</span>
                             <span class="item__percent">2.22%</span>
                         </div>
-                        <img class="item__price-diagrams" src="./img/chart-state%202.png" alt="diagrams">
+                        <img class="item__price-diagrams" src="./img/chart-state2.png" alt="diagrams">
                     </div>
                 </div>
                 <div class="market-trend__item item">
@@ -164,105 +164,183 @@
                     <input class="search__input" type="text" placeholder="Search Coin">
                 </div>
             </div>
-            <div class="categories__table">
-                <table class="categories__table table">
-                    <thead class="table__head">
-                        <tr>
-                            <th class="table__title">NO</th>
-                            <th class="table__title">NAME</th>
-                            <th class="table__title">LAST PRICE</th>
-                            <th class="table__title">CHANGE</th>
-                            <th class="table__title">MARKET STATS</th>
-                            <th class="table__title">TRADE</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>
-                                <img src="./img/bitcoin.png" alt="Bitcoin">
-                                <span class="table__coin">Bitcoin</span>
-                                <span class="table__short-coin">BTC</span>
-                            </td>
-                            <td>$56,623.54</td>
-                            <td>1.41%</td>
-                            <td><img src="./img/chart-state1.png" alt=""></td>
-                            <td><button class="table__button button">Trade</button></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td><img src="./img/etherium.png" alt="Ethereum">
-                                <span class="table__coin">Ethereum</span>
-                                <span class="table__short-coin">ETH</span>
-                            </td>
-                            <td>$4,267.90</td>
-                            <td>2.22%</td>
-                            <td><img src="./img/chart-state3.png" alt=""></td>
-                            <td><button class="table__button button">Trade</button></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td><img src="./img/binance.png" alt="Binance">
-                                <span class="table__coin">Binance</span>
-                                <span class="table__short-coin">BNB</span>
-                            </td>
-                            <td>$587.74</td>
-                            <td>-0.82%</td>
-                            <td><img src="./img/chart-state4.png" alt=""></td>
-                            <td><button class="table__button button">Trade</button></td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td><img src="./img/tether.png" alt="Tether">
-                                <span class="table__coin">Tether</span>
-                                <span class="table__short-coin">USDT</span>
-                            </td>
-                            <td>$0.9998</td>
-                            <td>-0.03%</td>
-                            <td><img src="./img/chart-state5.png" alt=""></td>
-                            <td><button class="table__button button">Trade</button></td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td><img src="./img/solana.png" alt="Solant">
-                                <span class="table__coin">Solanat</span>
-                                <span class="table__short-coin">SOL</span>
-                            </td>
-                            <td>$213.67</td>
-                            <td class="table__price_red">-0.53%</td>
-                            <td>
-                                <img src="./img/chart-state6.png" alt="">
-                            </td>
-                            <td>
-                                <button class="table__button button">Trade</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td><img src="./img/XRP.png" alt="XRP">
-                                <span class="table__coin">XRP</span>
-                                <span class="table__short-coin">XRP</span>
-                            </td>
-                            <td>$1.04</td>
-                            <td class="table__price_red">-0.44%</td>
-                            <td><img src="./img/chart-state7.png" alt=""></td>
-                            <td><button class="table__button button">Trade</button></td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td><img src="./img/USD.png" alt="USD">
-                                <span class="table__coin">USD Coin</span>
-                                <span class="table__short-coin">USDC</span>
-                            </td>
-                            <td>$1.04</td>
-                            <td class="table__price_red">-0.44%</td>
-                            <td><img src="./img/chart-state8.png" alt=""></td>
-                            <td><button class="table__button button">Trade</button></td>
-                        </tr>
-                    </tbody>
-                </table>
+            <table class="categories__table table">
+                <thead class="table__head">
+                    <tr>
+                        <th class="table__title">NO</th>
+                        <th class="table__title">NAME</th>
+                        <th class="table__title">LAST PRICE</th>
+                        <th class="table__title">CHANGE</th>
+                        <th class="table__title">MARKET STATS</th>
+                        <th class="table__title">TRADE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            <img src="./img/bitcoin.png" alt="Bitcoin">
+                            <span class="table__coin">Bitcoin</span>
+                            <span class="table__short-coin">BTC</span>
+                        </td>
+                        <td>$56,623.54</td>
+                        <td>1.41%</td>
+                        <td><img src="./img/chart-state1.png" alt=""></td>
+                        <td><button class="table__button button">Trade</button></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><img src="./img/etherium.png" alt="Ethereum">
+                            <span class="table__coin">Ethereum</span>
+                            <span class="table__short-coin">ETH</span>
+                        </td>
+                        <td>$4,267.90</td>
+                        <td>2.22%</td>
+                        <td><img src="./img/chart-state3.png" alt=""></td>
+                        <td><button class="table__button button">Trade</button></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><img src="./img/binance.png" alt="Binance">
+                            <span class="table__coin">Binance</span>
+                            <span class="table__short-coin">BNB</span>
+                        </td>
+                        <td>$587.74</td>
+                        <td>-0.82%</td>
+                        <td><img src="./img/chart-state4.png" alt=""></td>
+                        <td><button class="table__button button">Trade</button></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><img src="./img/tether.png" alt="Tether">
+                            <span class="table__coin">Tether</span>
+                            <span class="table__short-coin">USDT</span>
+                        </td>
+                        <td>$0.9998</td>
+                        <td>-0.03%</td>
+                        <td><img src="./img/chart-state5.png" alt=""></td>
+                        <td><button class="table__button button">Trade</button></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><img src="./img/solana.png" alt="Solant">
+                            <span class="table__coin">Solanat</span>
+                            <span class="table__short-coin">SOL</span>
+                        </td>
+                        <td>$213.67</td>
+                        <td class="table__price_red">-0.53%</td>
+                        <td>
+                            <img src="./img/chart-state6.png" alt="">
+                        </td>
+                        <td>
+                            <button class="table__button button">Trade</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td><img src="./img/XRP.png" alt="XRP">
+                            <span class="table__coin">XRP</span>
+                            <span class="table__short-coin">XRP</span>
+                        </td>
+                        <td>$1.04</td>
+                        <td class="table__price_red">-0.44%</td>
+                        <td><img src="./img/chart-state7.png" alt=""></td>
+                        <td><button class="table__button button">Trade</button></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td><img src="./img/USD.png" alt="USD">
+                            <span class="table__coin">USD Coin</span>
+                            <span class="table__short-coin">USDC</span>
+                        </td>
+                        <td>$1.04</td>
+                        <td class="table__price_red">-0.44%</td>
+                        <td><img src="./img/chart-state8.png" alt=""></td>
+                        <td><button class="table__button button">Trade</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <a class="categories__link">See All Coins</a>
+    </div>
+</section>
+<section class="section started">
+    <div class="content-container started__container">
+        <div class="started__get-started">
+            <h2 class="started__title">How To Get Started</h2>
+            <p class="started__subtitle">Simple and easy way to start your investment in cryptocurrency</p>
+            <button class="button">Get Started</button>
+        </div>
+        <div class="started__steps">
+            <div class="started__card card">
+                <img src="./img/template-get-started-icon1.png" alt="">
+                <div class="card__description">
+                    <h3 class="card__title">Create Your Account</h3>
+                    <p class="card__subtitle">Your account and personal identity are guaranteed safe.</p>
+                </div>
             </div>
-            <a class="categories__link">See All Coins</a>
+            <div class="started__card card">
+                <img src="./img/get-started-icon-frame.png" alt="">
+                <div class="card__description">
+                    <h3 class="card__title">Connect Bank Account</h3>
+                    <p class="card__subtitle">Connect the bank account to start transactions.</p>
+                </div>
+            </div>
+            <div class="started__card card">
+                <img src="./img/get-started-icon-frame2.png" alt="">
+                <div class="card__description">
+                    <h3 class="card__title">Start Build Portfolio</h3>
+                    <p class="card__subtitle">Buy and sell popular currencies and keep track of them.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section about">
+    <div class="content-container">
+        <h2 class="about__title title__text">Learn About Cryptocurrency</h2>
+        <p class="about__subtitle title__paragraph">Learn all about cryptocurrency to start investing</p>
+        <div class="about__news news">
+            <div class="news__item">
+                <h4 class="news__title">All about Investing in NFTs and related risks</h4>
+                <span class="news__subject subject">CRYPTO BASIC</span>
+            </div>
+            <div class="news__item">
+                <img class="news__image" src="./img/Thumbnail.png" alt="">
+                <span class="news__subject subject">CRYPTO BASIC</span>
+                <h4 class="news__title">What is cryptocurrency? all you need to know</h4>
+                <p class="news__description">Cryptocurrencies are basically digital assets. It is secured by cryptography..</p>
+            </div>
+            <div class="news__item">
+                <img class="news__image" src="./img/2.png" alt="">
+                <span class="news__subject subject">CRYPTO BASIC</span>
+                <h4 class="news__title">Can crypto really replace your bank account?</h4>
+                <p class="news__description">From direct deposit to earning yield, key ways crypto can help you take control..</p>
+            </div>
+            <div class="news__item">
+                <img class="news__image" src="./img/3.png" alt="">
+                <span class="news__subject subject">TIPS & TRICKS</span>
+                <h4 class="news__title">How to setup crypto wallet in your account</h4>
+                <p class="news__description">A crypto wallet is a place where you can securely keep your crypto..</p>
+            </div>
+            <div class="news__item">
+                <img class="news__image" src="./img/5.png" alt="">
+                <span class="news__subject subject">CRYPTO BASIC</span>
+                <h4 class="news__title">The fact about bitcoin must you know</h4>
+                <p class="news__description">Bitcoin is the world's first widely adopted cryptocurrency, it allows for secure.. </p>
+            </div>
+            <div class="news__item">
+                <img class="news__image" src="./img/4.png" alt="">
+                <span class="news__subject subject">TIPS & TRICKS</span>
+                <h4 class="news__title">When is the best time to invest in crypto?</h4>
+                <p class="news__description">When prices are fluctuating, how do you know when to buy?</p>
+            </div>
+            <div class="news__item">
+                <img class="news__image" src="./img/6.png" alt="">
+                <span class="news__subject subject">TIPS & TRICKS</span>
+                <h4 class="news__title">What Is DeFi? Inside the Wild West of Cryptocurrency.</h4>
+                <p class="news__description">Welcome to decentralized finance or DeFi, the new frontier of crypto that will..</p>
+            </div>
         </div>
     </div>
 </section>
