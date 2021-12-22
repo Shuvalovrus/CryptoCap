@@ -578,3 +578,51 @@ $bg-color: #11011E;
   margin-bottom: 13px;
 }
 /* /ABOUT */
+
+/* FOOTER */
+.footer {
+  padding: 60px 0;
+  background-color: #11011E;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  &__column {
+    display: flex;
+    flex-direction: column;
+
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__logo {
+    margin-bottom: 65px;
+  }
+  &__rights {
+    color: $light-subtitle;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+  }
+  &__column-title {
+    font-family: Raleway, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: $light-title;
+    margin-bottom: 20px;
+  }
+  &__link {
+    font-family: Roboto, sans-serif;
+    color: $light-subtitle;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
+
+.social {
+  max-width: 132px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  margin-bottom: 30px;
+}
+/* /FOOTER */
+

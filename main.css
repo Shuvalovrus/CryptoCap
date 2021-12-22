@@ -557,5 +557,51 @@ tbody td {
 }
 
 /* /ABOUT */
+/* FOOTER */
+.footer {
+  padding: 60px 0;
+  background-color: #11011E;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+.footer__column {
+  display: flex;
+  flex-direction: column;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__logo {
+  margin-bottom: 65px;
+}
+.footer__rights {
+  color: #B6B6B6;
+  font-size: 16px;
+  font-family: Roboto, sans-serif;
+}
+.footer__column-title {
+  font-family: Raleway, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ECF1F0;
+  margin-bottom: 20px;
+}
+.footer__link {
+  font-family: Roboto, sans-serif;
+  color: #B6B6B6;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.social {
+  max-width: 132px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+/* /FOOTER */
 
 /*# sourceMappingURL=main.css.map */
