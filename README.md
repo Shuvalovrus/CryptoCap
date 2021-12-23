@@ -6,6 +6,8 @@ Cryptocurrency Landing Page
 <a href="https://ibb.co/8YRDBhf"><img src="https://i.ibb.co/tLNMhdv/Community-Cover.png" alt="Community-Cover" border="0"></a>
 ### Maket
 https://www.figma.com/community/file/1047142300578798855
+### Page
+https://shuvalovrus.github.io/CryptoCap/
 
 ## Technologies used in the project
 <img src="https://img.shields.io/badge/code-HTML-green"> <img src="https://img.shields.io/badge/code-JS-green">
