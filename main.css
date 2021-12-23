@@ -12,7 +12,7 @@
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: Raleway, sans-serif;
 }
 
 .content-container {
@@ -117,7 +117,7 @@ body {
 }
 .title__paragraph {
   margin-bottom: 50px;
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 160%;
@@ -156,7 +156,7 @@ body {
 .item__name {
   padding: 5px;
   margin-left: 15px;
-  font-family: "Raleway", sans-serif;
+  font-family: Raleway, sans-serif;
   font-size: 10px;
   font-weight: 600;
   color: #1D1429;
@@ -179,7 +179,7 @@ body {
   flex-direction: column;
 }
 .item__price-wrapper > span {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   font-weight: 500;
 }
 .item__current-price {
@@ -224,7 +224,7 @@ body {
 }
 .feature__card-text {
   margin-bottom: 40px;
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;

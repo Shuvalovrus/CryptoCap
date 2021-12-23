@@ -1,20 +1,15 @@
 /* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap');
 
-$font-small: 400;
-$font-medium: 500;
-$font-semi-bold: 600;
-$font-big: 700;
-
+$roboto-font: Roboto, sans-serif;
+$rw-font: Raleway, sans-serif;
 /* /FONTS */
 
 /* COLOR */
-// Font
 $pure-white: #FFFFFF;
 $light-title: #ECF1F0;
 $light-subtitle: #B6B6B6;
 $black-title: #2B2B2B;
-// High Fidelity Color
 $primary-color: #0FAE96;
 $secondary-color: #511281;
 $main-bg: #11011E;
@@ -29,9 +24,8 @@ $card-bg: #fff;
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: $rw-font;
 }
-$bg-color: #11011E;
 
 .content-container {
   max-width: 1260px;
@@ -41,7 +35,7 @@ $bg-color: #11011E;
 .button {
   padding: 16px 30px;
   font-size: 16px;
-  font-weight: $font-semi-bold;
+  font-weight: 600;
   color: $pure-white;
   background-color: $primary-color;
   border: none;
@@ -51,7 +45,7 @@ $bg-color: #11011E;
 
 .section {
   min-height: 100vh;
-  background-color: $bg-color;
+  background-color: $main-bg;
 }
 
 .items {
@@ -78,7 +72,7 @@ $bg-color: #11011E;
   }
   &__title {
     font-size: 24px;
-    font-weight: $font-big;
+    font-weight: 700;
     color: $pure-white;
     & > span {
       color: $primary-color;
@@ -92,7 +86,7 @@ $bg-color: #11011E;
     margin-left: 12px;
     color: $light-subtitle;
     border: none;
-    background-color: $bg-color;
+    background-color: $main-bg;
   }
   &__button {
     margin-left: 27px;
@@ -103,7 +97,7 @@ $bg-color: #11011E;
   list-style: none;
   &__link {
     font-size: 16px;
-    font-weight: $font-medium;
+    font-weight: 500;
     color: $light-title;
     text-decoration: none;
     transition: .2s;
@@ -131,14 +125,14 @@ $bg-color: #11011E;
   &__text {
     margin-bottom: 30px;
     font-size: 36px;
-    font-weight: $font-big;
+    font-weight: 700;
     color: $light-title;
   }
   &__paragraph {
     margin-bottom: 50px;
-    font-family: 'Roboto', sans-serif;
+    font-family: $roboto-font;
     font-size: 18px;
-    font-weight: $font-small;
+    font-weight: 400;
     line-height: 160%;
     color: $light-subtitle;
   }
@@ -176,7 +170,7 @@ $bg-color: #11011E;
   &__name {
     padding: 5px;
     margin-left: 15px;
-    font-family: 'Raleway', sans-serif;
+    font-family: $rw-font;
     font-size: 10px;
     font-weight: 600;
     color: #1D1429;
@@ -198,7 +192,7 @@ $bg-color: #11011E;
     display: flex;
     flex-direction: column;
     & > span {
-      font-family: 'Roboto', sans-serif;
+      font-family: $roboto-font;
       font-weight: 500;
     }
   }
@@ -247,7 +241,7 @@ $bg-color: #11011E;
   }
   &__card-text {
     margin-bottom: 40px;
-    font-family: 'Roboto', sans-serif;
+    font-family: $roboto-font;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -308,7 +302,7 @@ $bg-color: #11011E;
       margin-bottom: 30px;
       font-size: 18px;
       font-weight: 500;
-      font-family: Roboto, sans-serif;
+      font-family: $roboto-font;
       color: $light-subtitle;
     }
     &__controls {
@@ -325,7 +319,7 @@ $bg-color: #11011E;
       cursor: pointer;
     }
     &__button_active {
-      font-family: Roboto, sans-serif;
+      font-family: $roboto-font;
       font-weight: 500;
       color: #211631;
       background-color: #EAEAEA;
@@ -355,7 +349,7 @@ $bg-color: #11011E;
     &__input {
       font-size: 16px;
       font-weight: 500;
-      font-family: Roboto, sans-serif;
+      font-family: $roboto-font;
       background: none;
       border: none;
       color: $light-subtitle;
@@ -367,7 +361,7 @@ $bg-color: #11011E;
   .table {
     width: 100%;
     margin-bottom: 40px;
-    font-family: Roboto, sans-serif;
+    font-family: $roboto-font;
     text-align: left;
     font-weight: 500;
     color: $light-subtitle;
@@ -455,7 +449,7 @@ $bg-color: #11011E;
    }
    &__subtitle {
      margin-bottom: 50px;
-     font-family: Roboto, sans-serif;
+     font-family: $roboto-font;
      font-size: 18px;
      font-weight: 400;
      color: $light-subtitle;
@@ -476,7 +470,7 @@ $bg-color: #11011E;
      color: $light-title;
    }
    &__subtitle {
-     font-family: Roboto, sans-serif;
+     font-family: $roboto-font;
      font-size: 16px;
      line-height: 24px;
      color: $light-subtitle;
@@ -510,7 +504,7 @@ $bg-color: #11011E;
     width: 100%;
   }
   &__description {
-    font-family: Roboto, sans-serif;
+    font-family: $roboto-font;
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
@@ -565,7 +559,7 @@ $bg-color: #11011E;
   width: fit-content;
   padding: 6px 6px;
   margin-bottom: 13px;
-  font-family: Roboto, sans-serif;
+  font-family: $roboto-font;
   font-size: 12px;
   font-weight: 500;
   color: $light-subtitle;
@@ -591,7 +585,7 @@ $bg-color: #11011E;
     margin-bottom: 65px;
   }
   &__rights {
-    font-family: Roboto, sans-serif;
+    font-family: $roboto-font;
     font-size: 16px;
     color: $light-subtitle;
   }
@@ -604,7 +598,7 @@ $bg-color: #11011E;
   }
   &__link {
     margin-bottom: 20px;
-    font-family: Roboto, sans-serif;
+    font-family: $roboto-font;
     font-size: 16px;
     color: $light-subtitle;
   }
